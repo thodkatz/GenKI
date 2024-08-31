@@ -17,8 +17,11 @@ INSTALL_REQUIRES = [
         "scipy~=1.8.0",
         "statsmodels~=0.13.2",
         "scikit_learn>=1.0.2",
-        # "torch==1.11.0",
+        "torch",
         "tqdm~=4.64.0",
+        "torch_geometric",
+        "ipykernel",
+        "tensorboard"
     ]
 
 setup(
