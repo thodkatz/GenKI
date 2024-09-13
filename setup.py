@@ -4,21 +4,21 @@ from setuptools import setup, find_packages
 HERE = pathlib.Path(__file__).parent
 README = (HERE / "README.md").read_text()
 DESCRIPTION = "GenKI"
-PACKAGES = find_packages(exclude=("tests*",))
+PACKAGES = find_packages(exclude=("tests*", "notebook",))
 exec(open('GenKI/version.py').read())
 
 INSTALL_REQUIRES = [
-        "anndata==0.8.0",
-        "matplotlib~=3.5.1",
+        "anndata",
+        "matplotlib",
         "numpy>=1.21.6",
-        "pandas~=1.4.2",
+        "pandas",
         "ray>=1.11.0",
-        "scanpy==1.9.1",
-        "scipy~=1.8.0",
-        "statsmodels~=0.13.2",
+        "scanpy",
+        "scipy",
+        "statsmodels",
         "scikit_learn>=1.0.2",
         "torch",
-        "tqdm~=4.64.0",
+        "tqdm",
         "torch_geometric",
         "ipykernel",
         "tensorboard"
